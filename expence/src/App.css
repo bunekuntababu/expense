@@ -1,0 +1,298 @@
+/* App.css */
+body{
+  background-image: url('../public/image/splitter.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Adjust to cover the entire background */
+  background-repeat: no-repeat; /* Prevent tiling of the image */
+  background-position: center; /* Center the image */
+  /* height: 100vh; Set the height of the body to fill the viewport */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+    
+  
+}
+.container {
+  width: 800px;
+  margin: auto;
+  padding: 10px;
+  /* background-color: #16a34a; */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #ac22ce;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0e93e6;
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #9ee2e7a2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+.member-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  /* background-color: #174bb4; */
+}
+
+.member-form input {
+  flex: 1;
+  background-color: rgb(222, 229, 237);
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input, select {
+  padding: 8px 12px;
+  background-color: rgb(222, 229, 237);
+  border: 1px solid #1496e7;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: black;
+}
+
+.amount-input {
+  width: 120px;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #528fe4;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #16e419;
+}
+
+.btn-success {
+  background-color: #528fe4;
+  color: rgb(22, 25, 19);
+}
+
+.btn-success:hover {
+  background-color: #16e419;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #d85113;
+}
+.split-section{
+  color: black;
+}
+
+/* Members List */
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: black;
+}
+
+.member-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  /* background-color: #2d55a7; */
+  border-radius: 20px;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #1c70c5;
+  margin-top: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Expenses List */
+.expenses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-card {
+  padding: 1rem;
+  /* background-color: #1c70c5; */
+  border-radius: 6px;
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: rgb(234, 7, 226);
+}
+
+.expense-details {
+  font-size: 0.999rem;
+  color: #2a2925;
+  margin-top: 4px;
+}
+
+.expense-amount {
+  font-weight: bold;
+  /* color: #0e93e6; */
+}
+
+/* Summary Section */
+.summary-card {
+  /* background-color: #126ac3; */
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: black;
+  border-bottom: 1px solid #1631cb;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.positive {
+  color: #22c55e;
+}
+
+.negative {
+  color: #ef4444;
+}
+
+
+.splits-list {
+  margin-top: 1rem;
+  border-top: 1px solid #1e6dda;
+  padding-top: 1rem;
+  color: black;
+}
+
+.split-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.split-amount-input {
+  width: 100px;
+  padding: 4px 8px;
+  border: 1px solid #1351cd;
+  border-radius: 4px;
+}
+
+.remaining-amount {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  /* background-color: #174bb4; */
+  border-radius: 4px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: rgb(11, 106, 230);
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: rgb(7, 119, 205);
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+
+/* Update existing styles */
+.expense-card {
+  padding: 1rem;
+  /* background-color: #1d73c8; */
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .amount-input {
+    width: 100%;
+  }
+  
+  .member-form {
+    flex-direction: column;
+  }
+}
